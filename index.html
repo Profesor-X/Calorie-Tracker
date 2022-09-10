@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calorie & Meal Tracker</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <script src="https://kit.fontawesome.com/35ba4579e7.js" crossorigin="anonymous"></script>
+
+     <style>
+      body {
+        background: url(/purple-bg.jpg);
+        background-position: center/center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+
+      .card-conten {
+        position: relative;
+        background: none !important;
+      }
+
+      .card-conten:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+        filter: blur(10px);
+      }
+
+
+     </style>
+  </head>
+  <body class="lighten-3">
+    <nav>
+      <div class="nav-wrapper blue-grey darken-3">
+        <div class="container">
+          <a href="#" class="brand-logo center">Calorie & Meal Tracker</a>
+          <ul class="right">
+            <a href="#" class="clear-btn btn blue-grey lighten-3">Clear All</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div style="margin-top: 3rem;" class="container">
+
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Add Meal / Food Item</span>
+          <form class="col">
+            <div class="row">
+
+              <div class="input-field col s6">
+                <input type="text" placeholder="Add Item" id="item-name">
+                <label for="item-name">Meal</label>
+              </div>
+
+              <div class="input-field col s6">
+                <input type="number" placeholder="Add Calorie" id="item-calories">
+                <label for="item-calories">Calorie</label>
+              </div>
+              <button class="add-btn btn blue-grey darken-3"><i class="fa fa-plus"></i> Add Meal</button>
+
+              <button class="update-btn btn blue-grey darken-3"><i class="fa-solid fa-pencil"></i> Update Meal</button>
+
+              <button class="delete-btn btn blue-grey darken-3"><i class="fa fa-remove"></i> Delete Meal</button>
+
+              <button class="back-btn btn blue-grey darken-3 right"><i class="fa fa-chevron-circle-left"></i> Back</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <h3 class="center-align white-text">Total Calories: <span class="total-calories">0</span></h3>
+
+      <!-- Item List -->
+      <ul id="item-list" class="collection">
+        
+      </ul>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    
+  </body>
+</html>
